@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shyam Pawar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Shyam Pawar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          shyam.pawar@vit.edu
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +918329003351
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.postimg.cc/4d0tb4KJ/3d-casual-life-young-man-sitting-with-laptop-and-waving.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Shyam Pawar! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div>
+        <div class="skill">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/457/nodejs-new-white-256.png"/>
+            <h6>Node Js</h6>
+            <p>3 years experience</p>
+          </div>
+        <div class="skill">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-256.png"/>
+            <h6>MongoDB</h6>
+            <p>3 years experience</p>
+          </div>
+        <div class="skill">
+            <img src="https://cdn0.iconfinder.com/data/icons/programming-1-1/32/Programming_C-3-512.png"/>
+            <h6>C++</h6>
+            <p>2 years experience</p>
+          </div>
+        <div class="skill">
+            <img src="https://cdn0.iconfinder.com/data/icons/server-it-2/64/05-Cloud_storage-512.png"/>
+            <h6>Cloud Computing</h6>
+            <p>1 years experience</p>
+          </div>
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Movie and Music Recommendation using Facial Emotions</h3>
+                <ul>
+                    <li>Functionalities: YouTube search and play music, movie website search and show movies based on given actor or singer along with emotions</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Bird Hunter and Hero Dog Games</h3>
+                <ul>
+                    <li>Games created to improve understanding about HTML-Canvas and advanced JavaScript</li>
+                    <li>Functionalities: Touch to destroy (Bird Hunter), destroy enemy forces with fire move (Hero Dog)</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>ElectroGad</h3>
+                <ul>
+                    <li>An electronics gadgets selling e-commerce website</li>
+                    <li>Functionalities: Product page, admin panel, secure authentication, checkout, payment gateway, forgot password, and cart</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <p>Shyam is a remarkable developer with an innate ability to solve complex problems. Her dedication and attention to detail are unmatched. She is a pleasure to work with and a valuable team member.</p>
+            </div>
+            <div class="recommendation">
+                <p>Collaborating with Shyam has been a transformative experience. Her technical expertise is complemented by her excellent communication skills and proactive approach to tackling challenges.</p>
+            </div>
+            <div class="recommendation">
+                <p>Shyam consistently delivers high-quality work and is always ready to lend a hand to her teammates. Her positive attitude and expertise in web development make her an asset to any project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you so much !</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
